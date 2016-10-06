@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Allihop</title>
+    
+    <meta name="description" content="A front-end library designed to help you create clean, accessible and responsive websites.">
+    
+    <link href="css/sass-output.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/helpers.js"></script>
+    
+    <!--<link rel="icon" href="images/favicon.ico" type="image/x-icon">-->
+
+</head>
+
+<body class="red">
+    
+    
+    
+    <header id="primary-header">
+        
+        <nav id="primary-nav">
+            <div class="container">
+                <a href="index.html" id="logo-text">Allihop</a>
+                <ul class="nav-tabs">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="get-started.html">Get started</a></li>
+                    <li class="active"><a href="documentation.html">Documentation</a></li>
+                    <!--<li><a href="themes.html">Themes</a></li>-->
+                    <!--<li><a href="donate.html">Donate</a></li>-->
+                </ul>
+              </div>
+        </nav>
+        
+        
+        <div class="container">
+            <h1>Documentation</h1>
+        </div>
+    </header>
+    
+    <main id="primary-container" class="container">
+
+        <!-- todo: use JS to auto-generate the aria stuff based on e.g. class="on-this-page"-->
+        
+        <div id="on-this-page"></div>
+        <!-- todo: auto TOC -->
+        
+        
+        <!-- todo: note this is 'in this section', not 'on this page' -->
+        
+        <p>Welcome to Allihop! Contained in this section you'll discover what's inside the library, view code samples, and read the usage notes.</p>
+        
+        <p>Allihop is still in development, so not all sections are available yet.</p>
+        
+        <section class="on-this-page">
+            <h3>In this section</h3> <!-- is this the right level? it might be sth different depending on context. they should all look the same though... right? TODO -->
+            <nav role="navigation">
+                <ul>
+                    <li>Getting started
+                        <ul>
+                            <li>Within new projects</li>
+                            <li>Within existing projects</li>
+                        </ul>
+                    </li>
+                    <li>Themes
+                        <ul>
+                            <li>Choosing a theme</li>
+                            <li>Fonts</li>
+                            <li>Colours</li>
+                            <li>Custom themes</li>
+                        </ul>
+                    </li>
+                    <li>Components
+                        <ul>
+                            <li>Layout elements</li>
+                            <li><a href="#links">Links</a></li>
+                            <li>Forms and interaction</li>
+                            <li>Images</li>
+                            <li>Navigation</li>
+                            <li>Headings</li>
+                            <li>Tables</li>
+                            <li>Ordered and unordered lists</li>
+                            <li>Definition lists</li>
+                            <li>Alerts and errors</li>
+                        </ul>
+                    </li>
+                    <li>Automation
+                        <ul>
+                            <li>Tables of contents</li>
+                            <li>Heading anchors</li>
+                        </ul>
+                    </li>
+                    <li>Customising and extending the library</li>
+                </ul>
+            </nav>
+        </section>
+        
+        <!-- todo: automation here -->
+        <!--<ol class="breadcrumbs" role="navigation" id="links">
+            <li>Components</li>
+            <li>Links</li>
+        </ol>-->
+        
+        <!-- todo: work on styles here -->
+        
+        <h1 id="links">Links</h1>
+        <h2>Calls-to-action</h2>
+        
+        <p>Calls-to-action are visually prominent links. There are two variations: <strong>bold</strong> and <strong>subtle</strong>. The bold variation is shown first in the following example.</p>
+        
+        <h3>Examples</h3>
+        
+        <a class="cta-bold" href="test.html">Sign up</a>
+        <a class="cta-subtle" href="test.html">Terms and conditions</a>
+        
+        <h3>Code</h3>
+        <!-- todo: use a monospace font -->
+        <code>
+            <a class="cta-bold" href="test.html">Sign up</a>
+            <br>
+            <a class="cta-subtle" href="test.html">Terms and conditions</a>
+        </code>
+        
+        <h3>Usage</h3>
+        <dl>
+            <dt>When to use</dt>
+            <dd>When 2 or 3 important links stand on their own</dd>
+            <dt>When not to use</dt>
+            <dd>When more than 3 links are grouped together (consider a <strong>list</strong>)</dd>
+            <dd>When interacting with forms (consider a <strong>button</strong>)</dd>
+            <dd>When the links do not navigate somewhere (consider a <strong>button</strong>)</dd>
+            <dt>Extra notes</dt>
+            <dd>Feel free to use multiple 'bold' variations and multiple 'subtle' variations--you don't need one of each. Choose based on the desired prominence of those links.</dd>
+            <dd>The difference between the 'bold' and 'subtle' variations is only visual. To a screen reader user, they are treated the same way. Consider putting the 'bold' links first so they are encountered before the 'subtle' ones.</dd>
+            <dd>Screen readers won't treat these calls-to-action any differently from regular links, so make sure their placement makes sense. If you want to put them at the very bottom of a long page, consider putting them at the top as well.</dd>
+        </dl>
+        
+        
+        
+        
+        
+    </main>
+    
+    <footer id="primary-footer">
+        <div class="container" id="footer-content">
+            <!-- Footer not yet used -->
+        </div>
+    </footer>
+
+</body>
+    
+</html>

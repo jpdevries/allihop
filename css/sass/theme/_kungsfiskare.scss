@@ -1,0 +1,59 @@
+// Colours
+// TODO: double check that all 'dark' and 'light' colours are accessible combinations. integrate a test to make sure they're used in an accessible way?
+
+
+$color_primary_dark: #075e63;
+$color_primary_light: #f9f9ee;
+$color_accent_dark: #095457;
+$color_accent_mid: #d22d08;
+$color_accent_light: #ffc000;
+$color_subtle_dark: #0e393c;
+$color_subtle_light: #b6b5b1;
+$color_darkest: #2e2819;
+$color_lightest: #f9f9ee;
+
+
+// Layout sizes, relative (em)
+$footer_height: 3em;
+$max-page-width: 45em;
+
+// Layout sizes, standard (rem)
+$small_border: 0.5rem;
+
+
+// Fonts
+@import 'https://fonts.googleapis.com/css?family=Poppins:400,700|Rubik:300,500';
+
+%font_poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+%font_rubik {
+   	font-family: 'Rubik', sans-serif;
+}
+
+%heading_normal {
+    @extend %font_poppins;
+	font-weight: 400;
+    strong {
+        font-weight: 700;   
+    }
+}
+
+%heading_strong {
+    @extend %font_poppins;
+    font-weight: 700;
+}
+
+%body_normal {
+	@extend %font_rubik;
+    font-weight: 300;
+    strong {
+        font-weight: 700;
+    }
+}
+
+%body_strong {
+    @extend %font_rubik;
+    font-weight: 500;
+}
